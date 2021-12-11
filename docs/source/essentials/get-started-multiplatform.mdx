@@ -2,10 +2,10 @@
 title: Get started with Multiplatform (Experimental)
 ---
 
-import AddPlugin from "../shared/add-plugin.mdx"
+import AddPlugin2 from "../shared/add-plugin.mdx"
 import DownloadSchema from "../shared/download-schema.mdx"
 
-> **Apollo Android 3 is available in alpha.** It is still in active development, and we'd love for folks to test it out. [See the v3 documentation](https://www.apollographql.com/docs/android/v3) and please [report any issues](https://github.com/apollographql/apollo-android/issues/new/choose)!
+> **Apollo Android 3 is available in beta.** It is still in active development, and we'd love for folks to test it out. [See the v3 documentation](https://www.apollographql.com/docs/android/v3) and please [report any issues](https://github.com/apollographql/apollo-android/issues/new/choose)!
 
 **Note:** Multiplatform support is experimental and still under heavy development, expect the API to change. If you have feedback, we'd love to hear it. Please see [Contributing.md](https://github.com/apollographql/apollo-android/blob/main/Contributing.md) for how to get in touch.
 
@@ -13,9 +13,15 @@ You can also check out the [multiplatform samples](https://github.com/apollograp
 
 Kotlin multiplatform allows to use the same queries and generated models on both Android and iOS. On Android it uses [OkHttp](https://square.github.io/okhttp/) to handle the HTTP calls. On iOS, it uses [NSUrlSession](https://developer.apple.com/documentation/foundation/nsurlsession).
 
+In addition to `jvm`, the supported native platforms currently are:
+- `iosArm64`
+- `iosX64`
+
+Furthermore, the `js` target is also available for the `apollo-api` dependency - meaning you could use the models and operations in a JavaScript project.
+
 ## Add the Gradle plugin
 
-<AddPlugin />
+<AddPlugin2 />
 
 ## Add the runtime dependencies
 
