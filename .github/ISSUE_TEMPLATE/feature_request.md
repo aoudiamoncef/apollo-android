@@ -2,12 +2,12 @@
 name: Feature request
 about: Suggest an idea for this project
 title: ''
-labels: 'Type: Feature'
+labels: ':sparkles: Type: Feature'
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
+**Use case**
 A clear and concise description of what the problem is. 
 
 **Describe the solution you'd like**
